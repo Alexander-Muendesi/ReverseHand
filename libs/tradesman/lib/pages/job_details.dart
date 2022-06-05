@@ -95,7 +95,8 @@ class TradesmanJobDetails extends StatelessWidget {
                     LongButtonWidget(
                       text: "Place Bid",
                       login: () => {
-                        DialogHelper.display(context, const RatingPopUpWidget()), //trigger place bid popup
+                        DialogHelper.display(context,
+                            const RatingPopUpWidget()), //trigger place bid popup
                         //RatingPopUpWidget PlaceBidPopupWidget
                       },
                     ),
