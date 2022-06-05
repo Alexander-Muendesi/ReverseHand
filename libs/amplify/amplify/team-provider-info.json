@@ -40,6 +40,11 @@
         "shortListBidResolver": {
           "deploymentBucketName": "amplify-reversehand-staging-144520-deployment",
           "s3Key": "amplify-builds/shortListBidResolver-4d473668414f354d3659-build.zip"
+        },
+        "getSecrets": {
+          "secretsPathAmplifyAppId": "d1qa8zxtog58do",
+          "deploymentBucketName": "amplify-reversehand-staging-144520-deployment",
+          "s3Key": "amplify-builds/getSecrets-776d764b66474955556e-build.zip"
         }
       }
     }

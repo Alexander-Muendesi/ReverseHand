@@ -7,8 +7,8 @@ import '../pages/job_listings.dart';
 class JobDetails extends StatelessWidget {
   // final Advert advert;
   final Store<AppState> store;
-  const JobDetails({Key? key, /*required this.advert, */required this.store}) : super(key: key);
-
+  const JobDetails({Key? key, /*required this.advert, */ required this.store})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class JobDetails extends StatelessWidget {
                     builder: (_) => ConsumerListings(store: store)));
           },
         ),
-        title: const Text("Title: NULL" ),
+        title: const Text("Title: NULL"),
       ),
       body: Row(
         children: [
@@ -43,16 +43,15 @@ class JobDetails extends StatelessWidget {
                       const ListTile(
                         title: Text(
                           "Description",
-                          style: TextStyle(
-                              fontSize: 25.0, color: Colors.white),
+                          style: TextStyle(fontSize: 25.0, color: Colors.white),
                         ),
                       ),
                       Padding(
                         padding: const EdgeInsets.fromLTRB(10, 0, 10, 10),
                         child: Text(
                           "Description: NULL",
-                          style: TextStyle(
-                              color: Colors.white.withOpacity(0.9)),
+                          style:
+                              TextStyle(color: Colors.white.withOpacity(0.9)),
                         ),
                       ),
                     ],
@@ -77,8 +76,7 @@ class JobDetails extends StatelessWidget {
                       ListTile(
                         title: Text(
                           'Bid One',
-                          style: TextStyle(
-                              fontSize: 25.0, color: Colors.white),
+                          style: TextStyle(fontSize: 25.0, color: Colors.white),
                         ),
                       ),
                     ],
