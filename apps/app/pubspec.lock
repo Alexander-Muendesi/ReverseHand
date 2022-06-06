@@ -141,6 +141,13 @@ packages:
       relative: true
     source: path
     version: "0.0.1"
+  aws_secretsmanager_api:
+    dependency: transitive
+    description:
+      name: aws_secretsmanager_api
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.2.0"
   boolean_selector:
     dependency: transitive
     description:
@@ -263,6 +270,27 @@ packages:
       relative: true
     source: path
     version: "0.0.1"
+  http:
+    dependency: transitive
+    description:
+      name: http
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.13.4"
+  http_parser:
+    dependency: transitive
+    description:
+      name: http_parser
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.0.1"
+  intl:
+    dependency: transitive
+    description:
+      name: intl
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.17.0"
   json_annotation:
     dependency: transitive
     description:
@@ -361,6 +389,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.6"
+  petitparser:
+    dependency: transitive
+    description:
+      name: petitparser
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "5.0.0"
   platform:
     dependency: transitive
     description:
@@ -389,6 +424,13 @@ packages:
       relative: true
     source: path
     version: "0.0.1"
+  shared_aws_api:
+    dependency: transitive
+    description:
+      name: shared_aws_api
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.2.0"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -485,6 +527,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.2.0+1"
+  xml:
+    dependency: transitive
+    description:
+      name: xml
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "5.4.1"
 sdks:
   dart: ">=2.17.0 <3.0.0"
   flutter: ">=2.8.1"

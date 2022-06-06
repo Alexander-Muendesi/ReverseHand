@@ -3,8 +3,8 @@ import 'package:amplify/models/ModelProvider.dart';
 import 'package:amplify_api/amplify_api.dart';
 import 'package:amplify_auth_cognito/amplify_auth_cognito.dart';
 import 'package:amplify_datastore/amplify_datastore.dart';
+import 'package:aws_secretsmanager_api/secretsmanager-2017-10-17.dart';
 import 'package:flutter/foundation.dart';
-
 import '../app_state.dart';
 import 'package:amplify_flutter/amplify_flutter.dart';
 import 'package:async_redux/async_redux.dart';
@@ -22,6 +22,12 @@ class InitAmplifyAction extends ReduxAction<AppState> {
 // used for configuring amplify
 Future<void> _configureAmplify() async {
   try {
+    final service = SecretsManager(region: 'eu-west-1');
+    String? config = (await service.getSecretValue(
+            secretId:
+                "arn:aws:secretsmanager:eu-west-1:727515863527:secret:ReverseHandConfiguration-UmpiG4"))
+        .secretString;
+
     final AmplifyAPI api = AmplifyAPI(modelProvider: ModelProvider.instance);
     final AmplifyAuthCognito authPlugin = AmplifyAuthCognito();
     final AmplifyDataStore ds =
@@ -36,8 +42,8 @@ Future<void> _configureAmplify() async {
 
     // configure Amplify
     // note that Amplify cannot be configured more than once!
-    // await Amplify.configure(
-    //     amplifyconfig); // uncomment this line and add your amplify config package
+    await Amplify.configure(
+        config!); // uncomment this line and add your amplify config package
 
     if (kDebugMode) {
       print('Amplify Successfully Configured 🎉');

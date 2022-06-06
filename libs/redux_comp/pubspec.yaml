@@ -17,6 +17,7 @@ dependencies:
   amplify_auth_cognito: ^0.5.1
   amplify_datastore: ^0.5.1
   amplify_api: ^0.5.1
+  aws_secretsmanager_api: ^1.2.0
 
   async_redux: ^15.0.0
 

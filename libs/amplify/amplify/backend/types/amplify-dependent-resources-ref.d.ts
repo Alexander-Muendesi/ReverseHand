@@ -30,7 +30,7 @@ export type AmplifyDependentResourcesAttributes = {
             "Region": "string",
             "LambdaExecutionRole": "string"
         },
-        "getSecrets": {
+        "viewAdvertsResolver": {
             "Name": "string",
             "Arn": "string",
             "Region": "string",
